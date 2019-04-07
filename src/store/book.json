@@ -1,0 +1,42 @@
+{
+  "book": [
+    {
+      "kanji": "政",
+      "reading": {
+        "kana": "せい",
+        "romanji": "sei"
+      },
+      "translate": "administração",
+      "words": [
+        {
+          "word": "行政",
+          "reading": "ぎょうせい",
+          "translate": "administração"
+        },
+        { "word": "政治", "reading": "せいじ", "translate": "governo" },
+        { "word": "政府", "reading": "せいふ", "translate": "governo" },
+        {
+          "word": "政党",
+          "reading": "せいとう",
+          "translate": "partido político"
+        }
+      ]
+    },
+    {
+      "kanji": "治",
+      "reading": {
+        "kana": "じ",
+        "romanji": "ji"
+      },
+      "translate": "curar, gerenciar, governar",
+      "words": [
+        {
+          "word": "治療",
+          "reading": "ちりょう",
+          "translate": "tratamento médico"
+        },
+        { "word": "治す", "reading": "なおす", "translate": "curar" }
+      ]
+    }
+  ]
+}

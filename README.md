@@ -1,2 +1,0 @@
-# kanjibook
-Created with CodeSandbox
