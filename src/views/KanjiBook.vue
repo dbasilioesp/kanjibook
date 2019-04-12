@@ -16,6 +16,8 @@ import kanjisCSV from "../store/kanjis.csv";
 import wordsCSV from "../store/words.csv";
 import KanjiCard from "../components/KanjiCard";
 
+console.log(kanjisCSV)
+
 let kanjis = Papa.parse(kanjisCSV, { header: true });
 let words = Papa.parse(wordsCSV, { header: true });
 console.log(words);
