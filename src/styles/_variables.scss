@@ -1,0 +1,43 @@
+// Typography
+$text-font-family: "Montserrat", sans-serif;
+$title-font-family: "Montserrat", sans-serif;
+
+// Limitation width
+$wrap-phone: 290px;
+$wrap-tablet: 48.33vw;
+$wrap-desktop: 1164px;
+$gutter-desktop: 2.5vw;
+$gutter-mobile: 5vw;
+
+// Shadows
+$shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+
+// Just Colors
+$primary-pink: #ee028c;
+$primary-yellow: #efd96c;
+$primary-blue: #0272bb;
+$primary-lightblue: #85cee4;
+$primary-violet: #8384c4;
+$primary-lapis: #4d4d4d;
+$primary-red: #dc0d15;
+$secondary-white: #ffffff;
+$secondary-pink: #f7c7e3;
+$secondary-yellow: rgba(#efd96c, 0.75);
+$secondary-violet: #d0d3f5;
+$secondary-lightblue: #e7f5fa;
+$background-white: #ffffff;
+$background-white-sand: #f0efea;
+$background-white-pampas: #f9f9f6;
+
+// Main Colors
+$color-primary: $primary-pink;
+$color-secondary: $primary-yellow;
+
+// Colors of Elements
+$text-color: $primary-lapis;
+$accent-color: $primary-pink;
+$background-color: $background-white-pampas;
+$error-color: $primary-red;
+
+// Cubic
+$cubicBezier1: cubic-bezier(0.535, -0.09, 0.55, 1.115);

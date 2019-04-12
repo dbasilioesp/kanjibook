@@ -1,0 +1,86 @@
+// Theme
+// @import "theme";
+
+// ==========================================================================
+// RESET
+// ==========================================================================
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+}
+
+// ==========================================================================
+// TEMPLATE
+// ==========================================================================
+html,
+body {
+  color: $text-color;
+  background: $background-color;
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+}
+
+.container {
+  max-width: $wrap-desktop;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include tablet-landscape-up {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}
+
+.pad {
+  padding-left: $gutter-mobile;
+  padding-right: $gutter-mobile;
+
+  @include tablet-landscape-up {
+    padding-left: $gutter-desktop;
+    padding-right: $gutter-desktop;
+  }
+}
+
+.slot-vertical {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include tablet-portrait-up {
+    padding-top: 6.6vw;
+    padding-bottom: 6.6vw;
+  }
+
+  @include tablet-landscape-up {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: $background-color;
+  opacity: 0;
+}
+
+#app.app-modal-active {
+  height: 100vh;
+  overflow: hidden;
+}

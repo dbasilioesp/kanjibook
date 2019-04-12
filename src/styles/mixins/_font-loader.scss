@@ -1,0 +1,31 @@
+// ==========================================================================
+// VARIABLES
+// ==========================================================================
+// You can override the default values by setting the variables in your Sass before importing mixins
+$fontPath: "fonts" !default;
+
+// ==========================================================================
+// MIXINS
+// ==========================================================================
+@mixin ff($name, $fileName: $fileName, $weight: normal, $style: normal, $className: $name, $isWebFont: false) {
+  $fullPath: "#{$fontPath}/#{$fileName}";
+  @if ($isWebFont) {
+    $fullPath: $fullPath + "-webfont";
+  }
+
+  @font-face {
+    font-family: "#{$name}";
+    src: url("#{$fullPath}.eot");
+    src: url("#{$fullPath}.eot?#iefix") format("embedded-opentype"), url("#{$fullPath}.woff2") format("woff2"),
+      url("#{$fullPath}.woff") format("woff"), url("#{$fullPath}.ttf") format("truetype");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: fallback;
+  }
+
+  .#{$className}-#{$weight} {
+    font-family: #{$name}, sans-serif;
+    font-weight: $weight;
+    font-style: $style;
+  }
+}

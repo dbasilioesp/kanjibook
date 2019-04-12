@@ -1,0 +1,43 @@
+$colors: (
+  primary: (
+    base: $primary-pink
+  ),
+  secondary: (
+    base: $primary-yellow
+  ),
+  pink: (
+    base: $primary-pink,
+    light: $secondary-pink
+  ),
+  yellow: (
+    base: $primary-yellow,
+    light: $secondary-yellow
+  ),
+  lightblue: (
+    base: $primary-lightblue,
+    light: $secondary-lightblue
+  ),
+  violet: (
+    base: $primary-violet,
+    light: $secondary-violet
+  ),
+  blue: (
+    base: $primary-blue
+  ),
+  white: (
+    base: $background-white,
+    sand: $background-white-sand,
+    pampas: $background-white-pampas
+  ),
+  lapis: (
+    base: $primary-lapis
+  )
+);
+
+.color {
+  @include color-modifiers($colors, "color");
+}
+
+.bg {
+  @include color-modifiers($colors, "background-color");
+}

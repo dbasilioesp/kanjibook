@@ -1,0 +1,29 @@
+.story-container {
+  padding: 5vh 5vw;
+}
+
+.canvas {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.story-bookcase {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    margin-right: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+.story-colors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 300px);
+  grid-gap: 20px;
+
+  & > * {
+    height: 100px;
+  }
+}

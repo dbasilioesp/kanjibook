@@ -1,0 +1,35 @@
+.grid-repeat-fit {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+
+  @include tablet-portrait-up {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
+  @include tablet-landscape-up {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  @include desktop-up {
+    grid-template-columns: repeat(auto-fit, minmax(430px, 1fr));
+  }
+}
+
+.grid-repeat-fill {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: auto;
+
+  @include tablet-portrait-up {
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  }
+
+  @include tablet-landscape-up {
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  }
+
+  @include desktop-up {
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  }
+}

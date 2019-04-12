@@ -1,0 +1,155 @@
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgba($text-color, 0.5);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgba($text-color, 0.5);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgba($text-color, 0.5);
+}
+
+// INPUTS
+
+label {
+  @extend p;
+  margin-bottom: 15px;
+}
+
+.input-text,
+.input-textarea {
+  // Visual
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.25;
+  color: $text-color;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid rgba($primary-pink, 0.2);
+  outline: 0;
+  transition: border-color 0.3s;
+
+  &::placeholder {
+    color: rgba($text-color, 0.5);
+  }
+
+  &:hover,
+  &:focus,
+  &--hover,
+  &--focus {
+    border-color: $primary-pink;
+  }
+
+  &[disabled] {
+    color: rgba($text-color, 0.5);
+    border-color: #edece5;
+  }
+
+  .form-input--error & {
+    border-color: $error-color;
+  }
+
+  @include tablet-landscape-up {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+  }
+}
+
+.input-text {
+  // Layout
+  width: 290px;
+  height: 45px;
+  padding: 0 20px;
+
+  @include tablet-landscape-up {
+    height: 50px;
+    padding: 0 15px;
+  }
+}
+
+.input-textarea {
+  padding: 16px 15px;
+}
+
+// AUTOCOMPLETE STYLE
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-color: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// FORM
+
+.form-input {
+  position: relative;
+  width: 290px;
+  margin-bottom: 20px;
+
+  &--error {
+    margin-bottom: 6px;
+  }
+
+  .error-message {
+    // Visual
+    font-size: 10px;
+    line-height: 1.3;
+    color: $error-color;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+
+.form-label {
+  height: 12px;
+  width: 42px;
+  color: #8fa4b3;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 9px;
+
+  &.form-label--accent {
+    display: block;
+    height: auto;
+    width: 100%;
+    color: $accent-color;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+}
+
+.form-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include tablet-portrait-up {
+    grid-auto-flow: column;
+    grid-template-columns: auto;
+    grid-column-gap: 20px;
+  }
+}
+
+.form-full-width {
+  .form-input {
+    width: 100%;
+  }
+
+  .input-text,
+  .input-textarea {
+    width: 100%;
+    margin-bottom: 2px;
+  }
+}
