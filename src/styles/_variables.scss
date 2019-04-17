@@ -13,31 +13,46 @@ $gutter-mobile: 5vw;
 $shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
 
 // Just Colors
-$primary-pink: #ee028c;
-$primary-yellow: #efd96c;
-$primary-blue: #0272bb;
-$primary-lightblue: #85cee4;
-$primary-violet: #8384c4;
-$primary-lapis: #4d4d4d;
-$primary-red: #dc0d15;
-$secondary-white: #ffffff;
-$secondary-pink: #f7c7e3;
-$secondary-yellow: rgba(#efd96c, 0.75);
-$secondary-violet: #d0d3f5;
-$secondary-lightblue: #e7f5fa;
-$background-white: #ffffff;
-$background-white-sand: #f0efea;
-$background-white-pampas: #f9f9f6;
+$color-orange: #f56845;
+$color-pink: #ffcdc3;
+$color-blue: #7fb0de;
+$color-beige: #f9f7f0;
+$color-white: #ffffff;
+
+// Greys
+$color-lapis: #4d4d4d;
 
 // Main Colors
-$color-primary: $primary-pink;
-$color-secondary: $primary-yellow;
+$color-primary: $color-orange;
+$color-seconary: $color-blue;
 
 // Colors of Elements
-$text-color: $primary-lapis;
-$accent-color: $primary-pink;
-$background-color: $background-white-pampas;
-$error-color: $primary-red;
+$text-color: $color-lapis;
+$accent-color: $color-orange;
+$background-color: $color-beige;
+$error-color: $color-orange;
 
 // Cubic
 $cubicBezier1: cubic-bezier(0.535, -0.09, 0.55, 1.115);
+
+// Colors Classes
+$colors: (
+  primary: (
+    base: $color-primary
+  ),
+  orange: (
+    base: $color-orange
+  ),
+  pink: (
+    base: $color-pink
+  ),
+  blue: (
+    base: $color-blue
+  ),
+  white: (
+    base: $color-white
+  ),
+  lapis: (
+    base: $color-lapis
+  )
+);

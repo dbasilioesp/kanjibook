@@ -1,5 +1,6 @@
 <template>
   <div class="kanji-book">
+    <h1 class="kanji-book__title title-size-1">Kanjibook</h1>
     <KanjiCard
       v-for="(info, index) in kanjis"
       :info="info"
@@ -16,11 +17,9 @@ import kanjisCSV from "../store/kanjis.csv";
 import wordsCSV from "../store/words.csv";
 import KanjiCard from "../components/KanjiCard";
 
-console.log(kanjisCSV)
-
 let kanjis = Papa.parse(kanjisCSV, { header: true });
 let words = Papa.parse(wordsCSV, { header: true });
-console.log(words);
+
 export default {
   name: "KanjiBook",
   data: function() {
@@ -49,5 +48,10 @@ export default {
 <style lang="scss" scoped>
 .kanji-book {
   margin: 3vmax;
+
+  &__title {
+    margin: auto;
+    text-align: center;
+  }
 }
 </style>

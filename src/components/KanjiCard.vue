@@ -28,20 +28,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../styles/exports";
+
 .kanji-list {
   margin: 3vmax;
 }
 
 .kanji-card {
-  margin-bottom: 30px;
-  max-width: 500px;
+  margin: 30px auto;
+  max-width: 890px;
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: lightyellow;
-    border: 1px solid lightblue;
+    background: $color-orange;
+    border: 1px solid $color-pink;
     padding: 10px 25px;
   }
 
@@ -52,7 +54,7 @@ export default {
   }
 
   &__words {
-    background: lightblue;
+    background: $color-white;
     padding: 25px 25px 15px;
     list-style: none;
     margin-top: 0;

@@ -13,7 +13,6 @@ h5 {
 }
 
 a {
-  text-decoration: none;
   color: $color-primary;
 }
 
@@ -50,8 +49,9 @@ mark {
 
 mark,
 .mark {
-  background-color: $secondary-pink;
+  background-color: $color-primary;
   padding: 0 4px;
+  color: white;
 
   &.mark--title {
     padding: 0 8px;
